@@ -58,19 +58,3 @@ Launch the production compiled server:
 npm run start
 ```
 
----
-
-## 🌐 Deployment to Render
-
-This application is configured as a monolithic Express app serving both API endpoints and static frontend assets on the same port, making it highly optimized for a single **Render Web Service** deployment.
-
-1. Go to [Render](https://render.com) and create a **New Web Service**.
-2. Connect your GitHub/GitLab repository.
-3. Configure the following service settings:
-   - **Runtime:** `Node`
-   - **Build Command:** `npm run build`
-   - **Start Command:** `npm run start`
-4. Under **Advanced**, add the environment variables:
-   - `NODE_ENV=production`
-   - `PORT=10000` (or leave empty to let Render assign)
-5. Click **Deploy Web Service**.
